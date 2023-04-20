@@ -1,0 +1,31 @@
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+GET http://localhost:3000/todos/2
+
+###
+GET http://localhost:3000/agenda/?date=2021-03-32
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+ {
+    "id": 1,
+    "todo": "Learn Node JS",
+    "priority": "HIGH",
+    "status": "IN PROGRESS",
+    "category": "LEARNING",
+    "dueDate": "2021-03-16"
+  }
+
+###
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+       "dueDate": "2021-03-16"
+}
+
+###
+DELETE http://localhost:3000/todos/6
